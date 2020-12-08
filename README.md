@@ -1,1 +1,0 @@
-# krizej.github.io
