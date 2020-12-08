@@ -1,0 +1,144 @@
+.button {
+    padding: 20px 100px;
+    display: inline-block;
+    background-color: #dddddd;
+    font-family: "Comic Sans MS";
+    color: #101010;
+    height: 40px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    text-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+.buttons {
+    display: box;
+    float: left;
+    padding: 0 300px;
+}
+
+.titlelink {
+    text-align: center;
+    text-decoration: none;
+    font-family: "Comic Sans MS";
+    color: #000000;  
+}
+
+.papiezimg {
+    margin: 0 300px;
+    width: 290px;
+    padding: 0;
+    float: right;
+    transition: width 0.1s;
+    transition-timing-function: ease-in;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.secret {
+    display: block;
+    opacity: 0.0;
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    transition: opacity 3s;
+    transition-delay: 2s;
+}
+
+.title {
+    font-size: 69px;
+    margin: 0;
+    padding: 20px;
+    background-color: #ddd;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    text-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+.title:hover {
+    background-color: #e5e5e5;
+}
+
+body {
+    height: fit content;
+    margin: 0;
+}
+
+.button:hover {
+    background-color: #e5e5e5;
+    color: #000000;
+}
+
+.papiezimg:hover {
+    width: 300px;
+
+}
+
+.papiezimg:hover ~ .secret {
+    opacity: 1.0;
+}
+
+.papiezimg:not(:hover) ~ .secret {
+    transition-delay: 0s;
+    transition: opacity 0.5s;
+}
+
+.dropbtn {
+    background-color: #ddd;
+    padding: 5px 80px;
+    font-family: "Comic Sans MS";
+    position: relative;
+    border: none;
+    bottom: 3px;
+    height: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top:77px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    font-family: "Comic Sans MS";
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #e5e5e5;
+}
+
+.trailer {
+    position: relative;
+    left:600px;
+    top: 44px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.bikini_dolne {
+    bottom:1px;
+    position:absolute;
+    text-align: center;
+    right: 5px;
+}
+
+#textshadow {
+    text-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
